@@ -332,15 +332,17 @@ export default function App() {
               setEditingInvoice(null);
               setView('invoice-entry');
             }}
-            onViewDetails={(inv) => {
+            // تم إصلاح الخطأ هنا
+            onViewDetails={(inv: any) => {
               setSelectedInvoice(inv);
               setView('invoice-details');
             }}
-            onEditInvoice={(inv) => {
+            // تم إصلاح الخطأ هنا
+            onEditInvoice={(inv: any) => {
               setEditingInvoice(inv);
               setView('invoice-entry');
             }}
-            onViewArchive={(arch) => {
+            onViewArchive={(arch: any) => {
               setSelectedArchive(arch);
               setView('archive-view');
             }}
